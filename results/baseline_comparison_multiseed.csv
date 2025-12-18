@@ -1,0 +1,4 @@
+method,mean_clicks,std_clicks,mean_cost
+FixedBid,5.4,1.85,298.0
+LinearPCTR,2.2,0.75,299.0
+REINFORCE,6.4,4.67,299.0
