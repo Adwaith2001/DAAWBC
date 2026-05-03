@@ -1,4 +1,5 @@
 import joblib
+import shutil
 from pathlib import Path
 
 # ============================================================
@@ -15,6 +16,12 @@ from sklearn.pipeline import Pipeline
 # ============================================================
 
 from utils.data_loader import load_ipinyou_logs
+
+# ============================================================
+# PROJECT ROOT (for copying files to data/ipinyou/)
+# ============================================================
+ROOT = Path(__file__).resolve().parents[1]
+PROJECT_DATA_DIR = ROOT / "data" / "ipinyou"
 
 
 def train_pctr_for_advertiser(advertiser_id: str):
@@ -35,6 +42,11 @@ def train_pctr_for_advertiser(advertiser_id: str):
     IN_FILE = BASE_DIR / advertiser_id / "final_sample_log.txt"
     OUT_FILE = BASE_DIR / advertiser_id / "final_sample_log_with_pctr.txt"
     MODEL_OUT = BASE_DIR / advertiser_id / "pctr_model.joblib"
+
+    # Project data directory for this advertiser
+    PROJECT_ADV_DIR = PROJECT_DATA_DIR / advertiser_id
+    PROJECT_ADV_DIR.mkdir(parents=True, exist_ok=True)
+    PROJECT_OUT_FILE = PROJECT_ADV_DIR / "final_sample_log_with_pctr.txt"
 
     # ------------------------------------------------------------
     # Load dataset
@@ -70,7 +82,7 @@ def train_pctr_for_advertiser(advertiser_id: str):
     # ------------------------------------------------------------
     clf = LogisticRegression(
         solver="saga",
-        max_iter=1000,
+        max_iter=2000,       # increased to reduce convergence warnings
         n_jobs=-1,
         class_weight="balanced",
         tol=1e-3,
@@ -95,13 +107,18 @@ def train_pctr_for_advertiser(advertiser_id: str):
     df["pctr"] = pipe.predict_proba(X)[:, 1]
 
     # ------------------------------------------------------------
-    # Save outputs
+    # Save outputs to dataset folder
     # ------------------------------------------------------------
     df.to_csv(OUT_FILE, sep="\t", index=False)
     joblib.dump(pipe, MODEL_OUT)
-
     print(f"✅ Saved dataset with pCTR: {OUT_FILE}")
     print(f"✅ Saved model: {MODEL_OUT}")
+
+    # ------------------------------------------------------------
+    # Copy to project data/ipinyou/<advertiser_id>/
+    # ------------------------------------------------------------
+    shutil.copy(OUT_FILE, PROJECT_OUT_FILE)
+    print(f"✅ Copied to project: {PROJECT_OUT_FILE}")
 
 
 def main():
@@ -109,7 +126,7 @@ def main():
     Train advertiser-specific pCTR models for multiple advertisers.
     """
 
-    ADVERTISERS = ["1458", "2259", "2821"]
+    ADVERTISERS = ["1458", "2259", "2821", "2997", "3358"]
 
     for adv in ADVERTISERS:
         train_pctr_for_advertiser(adv)

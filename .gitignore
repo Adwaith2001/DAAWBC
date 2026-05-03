@@ -1,0 +1,14 @@
+﻿# Model files (too large for GitHub)
+*.pt
+*.joblib
+
+# Output CSVs and plots
+outputs/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Data files (too large)
+data/ipinyou_v2/
