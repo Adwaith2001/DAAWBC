@@ -1,0 +1,8 @@
+Business Metrics: Assumptions
+==============================
+
+1. Revenue per click: $0.50 USD. Standard industry reference for display-ad CPC. The exact value shifts absolute revenue and ROI proportionally but does not affect the ordering between methods.
+
+2. Budget-to-dollar conversion: 1 budget unit = 1 cent USD. iPinYou budgets are recorded in RMB * 1000; this is an approximate ordering-preserving conversion.
+
+3. Conversion rate is not reported. iPinYou provides impression-level click labels but not post-click conversion outcomes for the five advertisers evaluated. Extending to a conversion-labelled dataset (Criteo Attribution Modeling for Bidding, Diemert et al. 2017) is noted as future work.

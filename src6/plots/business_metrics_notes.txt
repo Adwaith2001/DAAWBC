@@ -1,0 +1,28 @@
+Business Metrics: Notes for the paper
+======================================
+
+1. All metrics are reported in native iPinYou budget units. No
+   currency conversion is applied; no revenue assumption is made.
+
+2. ROI is reported as a ratio relative to the Linear-pCTR baseline
+   (Lin), computed as:
+
+      ROI_ratio(M) = (clicks(M) / cost(M))  divided by
+                    (clicks(Lin) / cost(Lin))
+
+   A value of 1.00x means the method achieves exactly the same
+   clicks-per-unit-spent as Lin. A value of 1.65x means it achieves
+   65% more clicks per unit spent than Lin. This is currency-free
+   and reader-friendly.
+
+3. Conversion rate is not reported. The iPinYou dataset provides
+   impression-level click labels but not post-click conversion
+   outcomes for the five advertisers evaluated. Extending to a
+   conversion-labelled dataset (Criteo Attribution Modeling for
+   Bidding, Diemert et al. 2017) is noted as future work.
+
+4. Auction win rate: not currently logged in eval_all_per_seed.csv.
+   To include it, evaluate_all.py can be extended to record
+   per-agent wins during evaluation. Alternatively, the metric can
+   be omitted with a brief justification that pacing efficiency
+   near 100% for every method makes win rate a redundant summary.

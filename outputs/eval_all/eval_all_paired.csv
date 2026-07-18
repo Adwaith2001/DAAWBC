@@ -1,0 +1,8 @@
+comparison,arm_a,arm_b,n_paired_seeds,mean_diff_clicks,sd_diff,paired_t,df,p_t_label,n_positive,sign_test_p,per_seed_diffs,seeds_used
+src5_ac vs pctr_baseline (Lin),src5_ac,pctr_baseline,5,369.64,7.541087455,109.6049041,4,p < 0.01,5,0.0625,+379.40;+362.80;+375.40;+362.60;+368.00,0;1;2;3;4
+src5_ac vs const_baseline (Const),src5_ac,const_baseline,5,380.94,7.541087455,112.9555572,4,p < 0.01,5,0.0625,+390.70;+374.10;+386.70;+373.90;+379.30,0;1;2;3;4
+src5_ac vs rand_baseline (Rand),src5_ac,rand_baseline,5,674.1,7.089076103,212.6276262,4,p < 0.01,5,0.0625,+683.10;+666.50;+679.20;+668.10;+673.60,0;1;2;3;4
+src6_mappo vs pctr_baseline (Lin),src6_mappo,pctr_baseline,5,349.54,9.49568323,82.31058071,4,p < 0.01,5,0.0625,+354.80;+338.30;+342.40;+362.00;+350.20,0;1;2;3;4
+src6_mappo vs const_baseline (Const),src6_mappo,const_baseline,5,360.84,9.49568323,84.97153385,4,p < 0.01,5,0.0625,+366.10;+349.60;+353.70;+373.30;+361.50,0;1;2;3;4
+src6_mappo vs rand_baseline (Rand),src6_mappo,rand_baseline,5,654,10.13138687,144.3423764,4,p < 0.01,5,0.0625,+658.50;+642.00;+646.20;+667.50;+655.80,0;1;2;3;4
+src6_mappo vs src5_ac,src6_mappo,src5_ac,5,-20.1,12.16100325,-3.695827181,4,p < 0.05,0,0.0625,-24.60;-24.50;-33.00;-0.60;-17.80,0;1;2;3;4

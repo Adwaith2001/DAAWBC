@@ -1,0 +1,84 @@
+{
+  "sweep": "all",
+  "n_seeds": 3,
+  "n_episodes": 80,
+  "paper_values": {
+    "entropy_beta": 0.03,
+    "gamma": 0.99,
+    "lr": 0.0003
+  },
+  "results": [
+    {
+      "hyperparameter": "entropy_beta",
+      "value": 0.01,
+      "mean_clicks": 593.3541666666666,
+      "sd_clicks": 28.34926788443281,
+      "n_seeds_completed": 3,
+      "is_paper_value": false
+    },
+    {
+      "hyperparameter": "entropy_beta",
+      "value": 0.03,
+      "mean_clicks": 603.75,
+      "sd_clicks": 29.88748431618158,
+      "n_seeds_completed": 3,
+      "is_paper_value": true
+    },
+    {
+      "hyperparameter": "entropy_beta",
+      "value": 0.1,
+      "mean_clicks": 587.5625,
+      "sd_clicks": 29.32229314020307,
+      "n_seeds_completed": 3,
+      "is_paper_value": false
+    },
+    {
+      "hyperparameter": "gamma",
+      "value": 0.95,
+      "mean_clicks": 585.6458333333334,
+      "sd_clicks": 28.370066568186502,
+      "n_seeds_completed": 3,
+      "is_paper_value": false
+    },
+    {
+      "hyperparameter": "gamma",
+      "value": 0.99,
+      "mean_clicks": 593.3541666666666,
+      "sd_clicks": 28.34926788443281,
+      "n_seeds_completed": 3,
+      "is_paper_value": true
+    },
+    {
+      "hyperparameter": "gamma",
+      "value": 0.999,
+      "mean_clicks": 581.9791666666666,
+      "sd_clicks": 20.580760635441376,
+      "n_seeds_completed": 3,
+      "is_paper_value": false
+    },
+    {
+      "hyperparameter": "lr",
+      "value": 0.0001,
+      "mean_clicks": 578.4375,
+      "sd_clicks": 27.807443360546472,
+      "n_seeds_completed": 3,
+      "is_paper_value": false
+    },
+    {
+      "hyperparameter": "lr",
+      "value": 0.0003,
+      "mean_clicks": 593.3541666666666,
+      "sd_clicks": 28.34926788443281,
+      "n_seeds_completed": 3,
+      "is_paper_value": true
+    },
+    {
+      "hyperparameter": "lr",
+      "value": 0.001,
+      "mean_clicks": 602.625,
+      "sd_clicks": 25.380541266883967,
+      "n_seeds_completed": 3,
+      "is_paper_value": false
+    }
+  ]
+}

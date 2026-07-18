@@ -1,0 +1,75 @@
+{
+  "seed": 0,
+  "coefficients": {
+    "B_MP": 0.45,
+    "B_MP2": -0.2,
+    "B_HSIN": 0.35,
+    "B_HCOS": -0.25,
+    "B_WDAY": 0.08,
+    "B_AREA": 0.3,
+    "B_VIS1": 0.25,
+    "B_FMT5": 0.4
+  },
+  "results": [
+    {
+      "target_ctr_pct": 5.0,
+      "achieved_ctr_pct": 4.9922,
+      "intercept_B0": -2.8491,
+      "bisection_iterations": 12,
+      "max_spearman_abs": 0.0178,
+      "per_advertiser_spearman": {
+        "1458": 0.0077,
+        "2259": 0.0178,
+        "3386": 0.014,
+        "2997": 0.0076,
+        "3476": 0.016
+      },
+      "non_circularity_holds": true
+    },
+    {
+      "target_ctr_pct": 10.0,
+      "achieved_ctr_pct": 9.9939,
+      "intercept_B0": -2.0874,
+      "bisection_iterations": 12,
+      "max_spearman_abs": 0.0264,
+      "per_advertiser_spearman": {
+        "1458": 0.0119,
+        "2259": 0.0264,
+        "3386": 0.0192,
+        "2997": 0.0097,
+        "3476": 0.0232
+      },
+      "non_circularity_holds": true
+    },
+    {
+      "target_ctr_pct": 15.0,
+      "achieved_ctr_pct": 14.9905,
+      "intercept_B0": -1.6113,
+      "bisection_iterations": 10,
+      "max_spearman_abs": 0.0341,
+      "per_advertiser_spearman": {
+        "1458": 0.0152,
+        "2259": 0.0341,
+        "3386": 0.0252,
+        "2997": 0.0154,
+        "3476": 0.0301
+      },
+      "non_circularity_holds": true
+    },
+    {
+      "target_ctr_pct": 20.0,
+      "achieved_ctr_pct": 19.9985,
+      "intercept_B0": -1.2488,
+      "bisection_iterations": 13,
+      "max_spearman_abs": 0.0392,
+      "per_advertiser_spearman": {
+        "1458": 0.0188,
+        "2259": 0.0392,
+        "3386": 0.0296,
+        "2997": 0.019,
+        "3476": 0.0338
+      },
+      "non_circularity_holds": true
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+policy,across_seed_mean_clicks,across_seed_sd_of_means,across_seed_se_of_mean,lift_vs_pctr_baseline_pct,n_seeds,n_episodes_per_seed
+const_baseline,577.3,0,0,-1.919809718,5,10
+rand_baseline,284.14,0.996493853,0.445645599,-51.7261298,5,10
+pctr_baseline,588.6,0,0,0,5,10
+src5_ac,958.24,7.541087455,3.372476835,62.79986408,5,10
+src6_mappo,938.14,9.49568323,4.246598639,59.38498131,5,10

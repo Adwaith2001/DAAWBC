@@ -1,14 +1,36 @@
-﻿# Model files (too large for GitHub)
-*.pt
-*.joblib
+﻿# Data (large + iPinYou license)
+data_2/
+data/
+*.txt.gz
+shared_auction_log*.txt
 
-# Output CSVs and plots
-outputs/
+# Sensitivity run outputs (27 training runs, regenerable)
+src6/sensitivity_runs/
 
-# Python cache
+# Python
 __pycache__/
 *.pyc
-*.pyo
+.ipynb_checkpoints/
 
-# Data files (too large)
-data/ipinyou_v2/
+# LaTeX build junk
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.bbl
+*.blg
+
+# Env
+.conda/
+*.egg-info/
+.vscode/
+New folder/
+Save Points/
+failed models/
+models/
+models_2/
+outputs_2/
+outputs/*
+!outputs/eval_all/
+src6/sensitivity_runs/src6/ACCEPTANCE-LETTER*.pdf
+*.lnk

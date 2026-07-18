@@ -1,0 +1,15 @@
+{
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "params_per_agent": 25279,
+  "params_total_5_agents": 126395,
+  "forward_pass_us_single_agent": 207.51,
+  "forward_pass_us_batched_5_agents": 203.58,
+  "per_agent_batched_us": 40.72,
+  "peak_gpu_memory_mb": 9.23,
+  "throughput_impressions_per_second": 24561.0,
+  "real_time_budget_us": 100000,
+  "pct_of_real_time_budget": 0.2036,
+  "training_time_per_seed_hours": 2.5,
+  "training_time_full_5_seed_protocol_hours": 12.5
+}
